@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		549ABA3E201EAE3100C6E5EB /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 549ABA3D201EAE3100C6E5EB /* VGG16.mlmodel */; };
+		54CED20A2015A86800FA9FB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CED2092015A86800FA9FB8 /* AppDelegate.swift */; };
+		54CED20C2015A86800FA9FB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CED20B2015A86800FA9FB8 /* ViewController.swift */; };
+		54CED20F2015A86800FA9FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CED20D2015A86800FA9FB8 /* Main.storyboard */; };
+		54CED2112015A86800FA9FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CED2102015A86800FA9FB8 /* Assets.xcassets */; };
+		54CED2142015A86800FA9FB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CED2122015A86800FA9FB8 /* LaunchScreen.storyboard */; };
+		54CED21F2015A86800FA9FB8 /* DermaRiskAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CED21E2015A86800FA9FB8 /* DermaRiskAITests.swift */; };
+		54CED22A2015A86800FA9FB8 /* DermaRiskAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CED2292015A86800FA9FB8 /* DermaRiskAIUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54CED21B2015A86800FA9FB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54CED1FE2015A86800FA9FB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54CED2052015A86800FA9FB8;
+			remoteInfo = DermaRiskAI;
+		};
+		54CED2262015A86800FA9FB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54CED1FE2015A86800FA9FB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54CED2052015A86800FA9FB8;
+			remoteInfo = DermaRiskAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		549ABA3D201EAE3100C6E5EB /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VGG16.mlmodel; sourceTree = "<group>"; };
+		54CED2062015A86800FA9FB8 /* DermaRiskAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DermaRiskAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CED2092015A86800FA9FB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54CED20B2015A86800FA9FB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54CED20E2015A86800FA9FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54CED2102015A86800FA9FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54CED2132015A86800FA9FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54CED2152015A86800FA9FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CED21A2015A86800FA9FB8 /* DermaRiskAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DermaRiskAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CED21E2015A86800FA9FB8 /* DermaRiskAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DermaRiskAITests.swift; sourceTree = "<group>"; };
+		54CED2202015A86800FA9FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CED2252015A86800FA9FB8 /* DermaRiskAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DermaRiskAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CED2292015A86800FA9FB8 /* DermaRiskAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DermaRiskAIUITests.swift; sourceTree = "<group>"; };
+		54CED22B2015A86800FA9FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54CED2032015A86800FA9FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CED2172015A86800FA9FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CED2222015A86800FA9FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54CED1FD2015A86800FA9FB8 = {
+			isa = PBXGroup;
+			children = (
+				54CED2082015A86800FA9FB8 /* DermaRiskAI */,
+				54CED21D2015A86800FA9FB8 /* DermaRiskAITests */,
+				54CED2282015A86800FA9FB8 /* DermaRiskAIUITests */,
+				54CED2072015A86800FA9FB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54CED2072015A86800FA9FB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54CED2062015A86800FA9FB8 /* DermaRiskAI.app */,
+				54CED21A2015A86800FA9FB8 /* DermaRiskAITests.xctest */,
+				54CED2252015A86800FA9FB8 /* DermaRiskAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54CED2082015A86800FA9FB8 /* DermaRiskAI */ = {
+			isa = PBXGroup;
+			children = (
+				549ABA3D201EAE3100C6E5EB /* VGG16.mlmodel */,
+				54CED2092015A86800FA9FB8 /* AppDelegate.swift */,
+				54CED20B2015A86800FA9FB8 /* ViewController.swift */,
+				54CED20D2015A86800FA9FB8 /* Main.storyboard */,
+				54CED2102015A86800FA9FB8 /* Assets.xcassets */,
+				54CED2122015A86800FA9FB8 /* LaunchScreen.storyboard */,
+				54CED2152015A86800FA9FB8 /* Info.plist */,
+			);
+			path = DermaRiskAI;
+			sourceTree = "<group>";
+		};
+		54CED21D2015A86800FA9FB8 /* DermaRiskAITests */ = {
+			isa = PBXGroup;
+			children = (
+				54CED21E2015A86800FA9FB8 /* DermaRiskAITests.swift */,
+				54CED2202015A86800FA9FB8 /* Info.plist */,
+			);
+			path = DermaRiskAITests;
+			sourceTree = "<group>";
+		};
+		54CED2282015A86800FA9FB8 /* DermaRiskAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54CED2292015A86800FA9FB8 /* DermaRiskAIUITests.swift */,
+				54CED22B2015A86800FA9FB8 /* Info.plist */,
+			);
+			path = DermaRiskAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54CED2052015A86800FA9FB8 /* DermaRiskAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CED22E2015A86800FA9FB8 /* Build configuration list for PBXNativeTarget "DermaRiskAI" */;
+			buildPhases = (
+				54CED2022015A86800FA9FB8 /* Sources */,
+				54CED2032015A86800FA9FB8 /* Frameworks */,
+				54CED2042015A86800FA9FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DermaRiskAI;
+			productName = DermaRiskAI;
+			productReference = 54CED2062015A86800FA9FB8 /* DermaRiskAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54CED2192015A86800FA9FB8 /* DermaRiskAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CED2312015A86800FA9FB8 /* Build configuration list for PBXNativeTarget "DermaRiskAITests" */;
+			buildPhases = (
+				54CED2162015A86800FA9FB8 /* Sources */,
+				54CED2172015A86800FA9FB8 /* Frameworks */,
+				54CED2182015A86800FA9FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54CED21C2015A86800FA9FB8 /* PBXTargetDependency */,
+			);
+			name = DermaRiskAITests;
+			productName = DermaRiskAITests;
+			productReference = 54CED21A2015A86800FA9FB8 /* DermaRiskAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54CED2242015A86800FA9FB8 /* DermaRiskAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CED2342015A86800FA9FB8 /* Build configuration list for PBXNativeTarget "DermaRiskAIUITests" */;
+			buildPhases = (
+				54CED2212015A86800FA9FB8 /* Sources */,
+				54CED2222015A86800FA9FB8 /* Frameworks */,
+				54CED2232015A86800FA9FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54CED2272015A86800FA9FB8 /* PBXTargetDependency */,
+			);
+			name = DermaRiskAIUITests;
+			productName = DermaRiskAIUITests;
+			productReference = 54CED2252015A86800FA9FB8 /* DermaRiskAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54CED1FE2015A86800FA9FB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Arjun Moorthy";
+				TargetAttributes = {
+					54CED2052015A86800FA9FB8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					54CED2192015A86800FA9FB8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54CED2052015A86800FA9FB8;
+					};
+					54CED2242015A86800FA9FB8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54CED2052015A86800FA9FB8;
+					};
+				};
+			};
+			buildConfigurationList = 54CED2012015A86800FA9FB8 /* Build configuration list for PBXProject "DermaRiskAI" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54CED1FD2015A86800FA9FB8;
+			productRefGroup = 54CED2072015A86800FA9FB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54CED2052015A86800FA9FB8 /* DermaRiskAI */,
+				54CED2192015A86800FA9FB8 /* DermaRiskAITests */,
+				54CED2242015A86800FA9FB8 /* DermaRiskAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54CED2042015A86800FA9FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CED2142015A86800FA9FB8 /* LaunchScreen.storyboard in Resources */,
+				54CED2112015A86800FA9FB8 /* Assets.xcassets in Resources */,
+				54CED20F2015A86800FA9FB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CED2182015A86800FA9FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CED2232015A86800FA9FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54CED2022015A86800FA9FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CED20C2015A86800FA9FB8 /* ViewController.swift in Sources */,
+				549ABA3E201EAE3100C6E5EB /* VGG16.mlmodel in Sources */,
+				54CED20A2015A86800FA9FB8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CED2162015A86800FA9FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CED21F2015A86800FA9FB8 /* DermaRiskAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CED2212015A86800FA9FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CED22A2015A86800FA9FB8 /* DermaRiskAIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54CED21C2015A86800FA9FB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54CED2052015A86800FA9FB8 /* DermaRiskAI */;
+			targetProxy = 54CED21B2015A86800FA9FB8 /* PBXContainerItemProxy */;
+		};
+		54CED2272015A86800FA9FB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54CED2052015A86800FA9FB8 /* DermaRiskAI */;
+			targetProxy = 54CED2262015A86800FA9FB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54CED20D2015A86800FA9FB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54CED20E2015A86800FA9FB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54CED2122015A86800FA9FB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54CED2132015A86800FA9FB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54CED22C2015A86800FA9FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54CED22D2015A86800FA9FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54CED22F2015A86800FA9FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6AA9QXNUN;
+				INFOPLIST_FILE = DermaRiskAI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dermaRiskAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54CED2302015A86800FA9FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6AA9QXNUN;
+				INFOPLIST_FILE = DermaRiskAI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dermaRiskAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54CED2322015A86800FA9FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6AA9QXNUN;
+				INFOPLIST_FILE = DermaRiskAITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ajrun-Moorthy.DermaRiskAITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DermaRiskAI.app/DermaRiskAI";
+			};
+			name = Debug;
+		};
+		54CED2332015A86800FA9FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6AA9QXNUN;
+				INFOPLIST_FILE = DermaRiskAITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ajrun-Moorthy.DermaRiskAITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DermaRiskAI.app/DermaRiskAI";
+			};
+			name = Release;
+		};
+		54CED2352015A86800FA9FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6AA9QXNUN;
+				INFOPLIST_FILE = DermaRiskAIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ajrun-Moorthy.DermaRiskAIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DermaRiskAI;
+			};
+			name = Debug;
+		};
+		54CED2362015A86800FA9FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6AA9QXNUN;
+				INFOPLIST_FILE = DermaRiskAIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ajrun-Moorthy.DermaRiskAIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DermaRiskAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54CED2012015A86800FA9FB8 /* Build configuration list for PBXProject "DermaRiskAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CED22C2015A86800FA9FB8 /* Debug */,
+				54CED22D2015A86800FA9FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54CED22E2015A86800FA9FB8 /* Build configuration list for PBXNativeTarget "DermaRiskAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CED22F2015A86800FA9FB8 /* Debug */,
+				54CED2302015A86800FA9FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54CED2312015A86800FA9FB8 /* Build configuration list for PBXNativeTarget "DermaRiskAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CED2322015A86800FA9FB8 /* Debug */,
+				54CED2332015A86800FA9FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54CED2342015A86800FA9FB8 /* Build configuration list for PBXNativeTarget "DermaRiskAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CED2352015A86800FA9FB8 /* Debug */,
+				54CED2362015A86800FA9FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54CED1FE2015A86800FA9FB8 /* Project object */;
+}
