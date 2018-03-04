@@ -9,8 +9,11 @@
 import UIKit
 import CoreML
 import Vision
+import AVFoundation
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    let synth = AVSpeechSynthesizer();
+    
     //@IBOutlets
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var resultLabel: UILabel!
@@ -33,10 +36,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     func analyseImage(image: CIImage) {
-        print("bar");
         resultLabel.text = "Analyzing the image .........."
         
-        guard let model = try? VNCoreMLModel(for: VGG16().model) else {
+        let utterance = AVSpeechUtterance(string: resultLabel.text!)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+        utterance.rate = 0.5
+        synth.speak(utterance)
+        
+        guard let model = try? VNCoreMLModel(for: melanoma_classify().model) else {
             fatalError("Cannot Load ML model")
         }
         
@@ -52,8 +59,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             //Update UI with the result
             DispatchQueue.main.async {
                 [weak self] in
-                self!.resultLabel?.text = "identifier = \(topResult.identifier)"
-                print(topResult.identifier)
+                let percent = Int((topResult.confidence) * 100);
+                self!.resultLabel?.text = "Identifier: \(percent)%" ;
+                
+                let resultutterance = AVSpeechUtterance(string: (self!.resultLabel?.text)!)
+                resultutterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+                self?.synth.speak(resultutterance)
             }
         }
         
@@ -84,11 +95,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         guard let ciImage = CIImage(image: (imageView?.image)!) else {
             fatalError("Convert CIImage from UIImage failed")
         }
-
         
         analyseImage(image: ciImage)
-        
-        print("foo")
     }
     
     @IBAction func chooseImage(_ sender: Any) {
@@ -112,25 +120,3 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
     }
 }
-
-
-
-//    func predictingResult(image: CIImage) {
-//        guard let model = try? VNCoreMLModel(for: melanoma_new().model) else {
-//            fatalError("Cannot Load ML model")
-//        }
-//
-//        let request = VNCoreMLRequest(model: model) { [weak self] request, error in
-//            guard let results = request.results as? [VNClassificationObservation],
-//                let topResult = results.first else {
-//                    fatalError("unexpected result type from VNCoreMLRequest")
-//            }
-//    }
-//
-
-
-
-//        let pickerController = UIImagePickerController()
-//        pickerController.delegate = self
-//        pickerController.sourceType = .savedPhotosAlbum
-//        present(pickerController, animated: true)
